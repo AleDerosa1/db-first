@@ -4,10 +4,10 @@ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardant
  id                         - UNSIGNED BIGINT 	- PRIMARY_KEY(UNIQUE, NOT NULL) - AUTO_INCREMENT
 
  casa_produttrice           - VARCHAR(255)           - NOT NULL    - INDEX
- anno_immatricolazione      - DATE                   - NOT NULL
+ anno_immatricolazione      - DATE                   - NOT NULL    - DEFAULT(0)
  modello                    - VARCHAR(255)           - NULL
- chilometri                 - UNSIGNED MEDIUMINT     - NOT NULL
+ chilometri                 - UNSIGNED MEDIUMINT     - NOT NULL    - DEFAULT(0)
  cilindrata                 - UNSIGNED SMALLINT      - NULL
- proprietari                - TINYINT                - NOT NULL
+ proprietari                - TINYINT                - NOT NULL    - DEFAULT(0)
  prezzo                     - DECIMAL(8,2)           - NULL
  
